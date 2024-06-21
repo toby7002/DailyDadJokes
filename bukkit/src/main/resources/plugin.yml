@@ -1,0 +1,7 @@
+name: $project_name
+main: dev.toby7002.ddj.bukkit.DailyDadJokesBukkit
+version: $project_version
+api-version: 1.20
+folia-supported: true
+authors: [$project_author]
+description: $project_description

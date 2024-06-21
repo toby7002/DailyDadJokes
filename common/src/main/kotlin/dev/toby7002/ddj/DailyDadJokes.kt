@@ -1,7 +1,6 @@
 package dev.toby7002.ddj
 
 import io.ktor.client.*
-import io.ktor.client.call.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
@@ -19,7 +18,7 @@ class DailyDadJokes {
                 }
             }
 
-            if(res.status !== HttpStatusCode.OK) {
+            if (res.status != HttpStatusCode.OK) {
                 return "Cannot find a joke :("
             }
 
