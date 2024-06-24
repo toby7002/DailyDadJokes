@@ -1,0 +1,3 @@
+message: "§e[DailyDadJokes] {{joke}}" # {{joke}} is a dad joke
+
+enableByDefault: true # Tell a joke when players join
