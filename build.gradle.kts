@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "1.9.21"
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("com.diffplug.spotless") version "6.25.0"
     id("org.jetbrains.gradle.plugin.idea-ext") version "1.1.8"
@@ -16,7 +16,9 @@ subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "com.github.johnrengelman.shadow")
 
-    group = project_id
+    val artifact_group: String by project
+
+    group = artifact_group
     version = "$version_major.$version_minor.$version_patch"
 
     repositories { mavenCentral() }
@@ -27,7 +29,7 @@ subprojects {
 
     java {
         withSourcesJar()
-        toolchain.languageVersion = JavaLanguageVersion.of(21) // Kotlin can read this line
+        toolchain.languageVersion = JavaLanguageVersion.of(17) // Kotlin can read this line
     }
 
     tasks {
