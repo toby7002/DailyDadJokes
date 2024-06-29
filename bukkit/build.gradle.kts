@@ -8,8 +8,7 @@ dependencies {
     val mccoroutine_version: String by project
 
     implementation(project(":common"))
-    implementation("com.github.shynixn.mccoroutine:mccoroutine-bukkit-api:$mccoroutine_version")
-    implementation("com.github.shynixn.mccoroutine:mccoroutine-bukkit-core:$mccoroutine_version")
 
+    compileOnly("com.github.shynixn.mccoroutine:mccoroutine-bukkit-api:$mccoroutine_version")
     compileOnly("org.spigotmc:spigot-api:$api_version")
 }

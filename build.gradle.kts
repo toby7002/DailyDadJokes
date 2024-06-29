@@ -29,7 +29,7 @@ subprojects {
 
     java {
         withSourcesJar()
-        toolchain.languageVersion = JavaLanguageVersion.of(17) // Kotlin can read this line
+        toolchain.languageVersion = JavaLanguageVersion.of(21) // Kotlin can read this line
     }
 
     tasks {

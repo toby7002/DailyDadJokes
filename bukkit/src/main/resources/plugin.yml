@@ -1,10 +1,13 @@
 name: $project_name
 main: ${artifact_group}.bukkit.DailyDadJokesBukkit
 version: $project_version
-api-version: 1.20
+api-version: 1.21
 folia-supported: false
 authors: [$project_author]
 description: $project_description
+libraries:
+  - com.github.shynixn.mccoroutine:mccoroutine-bukkit-api:2.17.0
+  - com.github.shynixn.mccoroutine:mccoroutine-bukkit-core:2.17.0
 
 commands:
   dailydadjokes:
