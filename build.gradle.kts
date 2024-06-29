@@ -54,7 +54,8 @@ subprojects {
                         "project_license" to project_license,
                         "project_version" to version,
                         "project_author" to project_author,
-                        "project_description" to project_description
+                        "project_description" to project_description,
+                        "artifact_group" to artifact_group
                     )
                 )
             }
